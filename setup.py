@@ -21,5 +21,5 @@ setup(name='Music Genre Classification Classification',
           'lda',
           'pypdf2',
           'tqdm',
-	  'python_speech_features'
+          'python_speech_features'
       ])

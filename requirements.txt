@@ -1,0 +1,12 @@
+ setuptools
+ numpy
+ matplotlib
+ python_speech_features
+ python-dateutil
+ pyparsing
+ pytz
+ cycler
+ lda
+ scipy
+ scikit-learn
+ tqdm
