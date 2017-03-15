@@ -5,7 +5,7 @@ Music Genre Classification Project based on Python.
 ### Libraries Required
   - [NumPy](http://www.numpy.org/) - Dependency for SciKit
   - [SciPy](https://www.scipy.org/) - Dependency for SciKit
-  - [Tensor Flor](https://www.tensorflow.org/) - Tensor Flow Library for Nueral Network
+  - [Tensor Flow](https://www.tensorflow.org/) - Tensor Flow Library for Nueral Network
   - [Python Speech Features](http://python-speech-features.readthedocs.io/en/latest/) - Python Speech Library
   - [SciKit](http://scikit-learn.org/) - Machine Learning Library
   - [SetupTools](http://pythonhosted.org/setuptools/) - Dependency for MatPlotLib
