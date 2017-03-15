@@ -1,18 +1,26 @@
 from setuptools import setup
 
-setup(name='Gunshot Detection using NN',
+setup(name='Music Genre Classification Classification',
       version='0.1',
-      description='Gunshot Detection in Python',
-      url='https://github.com/pritansh/gunshot_detection',
-      author='Pritansh',
-      author_email='pritansh.chaudhary@gmail.com',
+      description='Music Genre Classification in Python',
+      url='https://github.com/danish1994/Music-Genre-Classification',
+      author='Danish',
+      author_email='danish8802204230@gmail.com',
       license='MIT',
-      packages=['gunshot_detection'],
+      packages=['src'],
       install_requires=[
-          'setuptools',
-          'tensorflow',
-          'librosa',
           'numpy',
+          'scipy',
+          'scikit-learn',
           'matplotlib',
-          'setuptools'
+          'setuptools',
+          'python-dateutil',
+          'pyparsing',
+          'pytz',
+          'cycler',
+          'lda',
+          'pypdf2',
+          'tqdm',
+          'python_speech_features',
+          'tensorflow'
       ])

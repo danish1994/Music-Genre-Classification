@@ -1,5 +1,14 @@
 setuptools
-tensorflow
-librosa
 numpy
 matplotlib
+tensorflow
+librosa
+python_speech_features
+python-dateutil
+pyparsing
+pytz
+cycler
+lda
+scipy
+scikit-learn
+tqdm
