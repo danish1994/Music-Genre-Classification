@@ -3,7 +3,7 @@ from itertools import *
 import ml
 import numpy as np
 
-path = '/home/danish/Projects/Music-Genre-Classification/DataSet/wav'
+path = 'DataSet/wav'
 all_classes = os.listdir(path)
 
 for i in reversed(range(2,7)):
