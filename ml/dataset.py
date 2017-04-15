@@ -3,9 +3,10 @@ import numpy as np
 
 class Dataset:
     ''''''
-    def __init__(self, directory_path='',class_dirs='' ,train_perc=0.75):
-        self.class_dirs = class_dirs
-        print(self.class_dirs)
+    def __init__(self, directory_path='', dir_comb=[], train_perc=0.60):
+        self.class_dirs = os.listdir(directory_path)
+        if len(dir_comb) > 0:
+            self.class_dirs = dir_comb
         classes = len(self.class_dirs)
         self.train_files = np.empty(classes, dtype='object')
         self.test_files = np.empty(classes, dtype='object')
@@ -18,19 +19,11 @@ class Dataset:
             self.test_files[i] = files[train_size:]
 
     def __str__(self):
-        data_str = ''
+        data_str = 'Dataset: '
         for i in range(0, len(self.class_dirs)):
-            data_str += str(i+1) + ': ' + self.class_dirs[i] + ' (' + str(len(self.train_files[i]))
-            data_str += ',' + str(len(self.test_files[i])) + ')'
-            if i+1 < len(self.class_dirs):
-                data_str += '\n'
+            data_str += '\n\t' + str(i+1) + ': ' + self.class_dirs[i]
+            data_str += ' ' + str((len(self.train_files[i]), len(self.test_files[i])))
         return data_str
 
     def __repr__(self):
-        data_str = ''
-        for i in range(0, len(self.class_dirs)):
-            data_str += str(i+1) + ': ' + self.class_dirs[i] + ' (' + str(len(self.train_files[i]))
-            data_str += ',' + str(len(self.test_files[i])) + ')'
-            if i+1 < len(self.class_dirs):
-                data_str += '\n'
-        return data_str
+        return str(self)
