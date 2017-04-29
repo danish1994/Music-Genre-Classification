@@ -7,7 +7,6 @@ from sklearn.cross_decomposition import CCA, PLSSVD
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 from sklearn.random_projection import GaussianRandomProjection as GRP, SparseRandomProjection as SRP
 
-from ml.progress import print_progress
 
 def ind2vec(ind, classes=None):
     '''

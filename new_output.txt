@@ -1,0 +1,20 @@
+Features Config: 
+	Features: ['mfcc', 'mel_spec']
+	Coeff: ('MFCC', 20)
+Reduction Config: 
+	Feature Reduction: None
+	Reduction size: 10
+	Vector Reduction: mean
+Extracting Features: 
+Extracting Features: 
+Multilayer Perceptron: 
+Training ->
+
+
+Test Accuracy:  0.81
+
+	Type: nu
+	Kernel: linear
+	Input: 148
+	Output: 4
+Test Accuracy:  0.781

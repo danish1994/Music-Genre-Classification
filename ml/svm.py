@@ -3,7 +3,6 @@ from sklearn.metrics import confusion_matrix
 import numpy as np
 
 from ml.features import AudioFeatures
-from ml.progress import print_progress
 
 class SVM:
     ''''''
@@ -35,7 +34,7 @@ class SVM:
         return test_accuracy
 
     def __str__(self):
-        svm_str = 'SVM'
+        svm_str = ''
         svm_str += '\n\tType: ' + self.svm_type
         svm_str += '\n\tKernel: ' + self.kernel
         if self.kernel == 'poly':

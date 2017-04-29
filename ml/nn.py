@@ -3,7 +3,6 @@ import tensorflow as tf
 from sklearn.metrics import confusion_matrix
 
 from ml.features import AudioFeatures
-from ml.progress import print_progress
 
 class NetworkConfig:
     ''''''
@@ -25,7 +24,7 @@ class NetworkConfig:
         net_config_str += '\n\tHidden Layers: '
         for i in range(0, len(self.hidden_units)):
             net_config_str += '\n\t\t' + str(i+1)+ ': ' + str(self.hidden_units[i])
-        return net_config_str
+        return ""
 
     def __repr__(self):
         return str(self)
